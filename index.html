@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> <img src="./capsule.svg" alt="Ray Medicose" height="25px"> Ray Medicose</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Pin Code" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4 rounded-circle bg-transparent" src="./logo.png" alt="" width="150" height="150">
+    <h1 class="display-5 fw-bold">Ray Medicose</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Welcome to Ray Medicose, your trusted medical store in Pathakhera. With decades of service to the community, we are one of the oldest and most reliable medical shops in the Pathakhera area. We take pride in providing quality healthcare products and personalized service to our customers.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Photo Gallery</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Services</button>
+      <!-- Photo Gallery Modal -->
+      <div class="modal fade" id="photoGalleryModal" tabindex="-1" aria-labelledby="photoGalleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="photoGalleryModalLabel">Photo Gallery</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#photoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="store1.png" class="d-block w-100" alt="Store Front">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Store Front</h5>
+                      <p>Our welcoming store entrance</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="store2.png" class="d-block w-100" alt="Medicine Section">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Medicine Section</h5>
+                      <p>Well-organized medicine display</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="store3.png" class="d-block w-100" alt="Counter">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Service Counter</h5>
+                      <p>Our friendly staff ready to help</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Update the Photo Gallery button to trigger modal
+        document.querySelector('.btn-primary').setAttribute('data-bs-toggle', 'modal');
+        document.querySelector('.btn<p></p>-primary').setAttribute('data-bs-target', '#photoGalleryModal');
+      </script>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <img src="store2.png" class="img-fluid border rounded-3 shadow-lg mb-4 mx-auto d-block" alt="Example image" style="max-width: 700px; height: auto;" loading="lazy">
+  </div>
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Our Medical Services</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img src="briefcase.svg" width="1em" height="1em" alt="Primary Care">
+        </div>
+        <div>
+          <h2>Primary Care</h2>
+          <p>Our experienced physicians provide comprehensive primary care services including routine check-ups, vaccinations, preventive screenings, and treatment for common illnesses. We focus on building long-term relationships with our patients.</p>
+          <a href="#" class="btn btn-primary">
+            Book Appointment
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img src="box-seam.svg" width="1em" height="1em" alt="Pharmacy">
+        </div>
+        <div>
+          <h2>Pharmacy Services</h2>
+          <p>Our full-service pharmacy offers prescription medications, over-the-counter drugs, and expert medication counseling. Our pharmacists work closely with your healthcare providers to ensure optimal treatment.</p>
+          <a href="#" class="btn btn-primary">
+            Refill Prescription
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <img src="briefcase.svg" width="1em" height="1em" alt="Specialized Care">
+        </div>
+        <div>
+          <h2>Specialized Care</h2>
+          <p>We offer specialized medical services including diabetes management, cardiovascular health monitoring, and chronic disease management. Our specialists provide personalized care plans tailored to your needs.</p>
+          <a href="#" class="btn btn-primary">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="..." alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>...</h5>
+        <p>...</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./store1.png" alt="store1">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./store2.png" alt="store2">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./store3.png" alt="store3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+  </div>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">© 1999 Company, Inc</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
