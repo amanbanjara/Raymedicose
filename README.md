@@ -102,6 +102,6 @@ For inquiries or support, please contact:
 - Add multi-language support.
 - Develop a mobile application version.
 
----
+--
 
 Happy Coding! 🚀
