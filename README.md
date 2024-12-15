@@ -21,7 +21,7 @@ An efficient and user-friendly web application designed to streamline the purcha
 
 ## Technology Stack
 
-- **Frontend:** HTML, CSS, JavaScript, ReactJS
+- **Frontend:** HTML, CSS,JavaScript, ReactJS
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
 - **Payment Gateway:** Stripe/PayPal integration
