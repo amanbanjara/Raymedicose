@@ -1,5 +1,5 @@
 # Online Medical Store  
-
+ 
 An efficient and user-friendly web application designed to streamline the purchase and management of medicines and healthcare products online. This project serves as a one-stop solution for customers, pharmacies, and administrators.
 
 ## Features
